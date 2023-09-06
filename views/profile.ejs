@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('partials/header.ejs') %>
+    <div class="navigation">
+      <div class="nav-inner container">
+        <p>Homes > <%= navigationTitle%></p>
+      </div>
+    </div>
+    <div class="products">
+      <div class="products-inner container">
+        <div class="section-title">
+          <h2><%= sectionTitle %></h2>
+        </div>
+        <div class="product-profile">
+          <div class="products-item">
+            <div class="products-item-sale">
+              <p class="item-sale"><%= data.sale%> %</p>
+              <img src="images/like.png" alt="" />
+            </div>
+            <img class="products-item-img" src="<%= data.imgUrl  %>" alt="" />
+          </div>
+          <div class="product-info">
+            <h2 class="item-title"><%= data.title%></h2>
+            <p class="item-price"><%= data.price%></p>
+
+            <a href="newProduct">
+              <div class="profile-add">
+                <img src="/images/add.png" alt="" />
+                <p>Добавить в карзину</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="profile-item-dots">
+            <div class="dropdown">
+              <img src="/images/dots.png" alt="" />
+              <div class="dropdown-content">
+                <a href="/editProduct/<%= data.id %>" class="dropdown-edit"
+                  >Редактировать</a
+                >
+                <a class="dropdown-delete" href="/deleteProd/<%= data.id %>">
+                  Удалить
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
+      integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/delete.js"></script>
+  </body>
+</html>

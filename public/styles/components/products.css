@@ -1,0 +1,132 @@
+.products-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 200px;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  margin: 48px 0;
+  text-transform: capitalize;
+}
+.section-title a {
+  display: flex;
+  align-items: center;
+  background: var(--pink);
+  border-radius: 15px;
+  padding: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.section-title-img {
+  width: 20px;
+  margin-right: 10px;
+}
+.products-item {
+  width: calc(25% - 20px);
+  margin: 50px 20px;
+  height: 550px;
+  background: #ededed;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+}
+.products-item-img {
+  width: 100%;
+}
+.products-item-sale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.item-sale {
+  background-color: var(--pink);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 7px;
+  color: #ffffff;
+}
+.item-title,
+.item-price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--darkGreen);
+  margin-bottom: 11px;
+}
+.item-price {
+  margin-bottom: 47px;
+}
+
+.item-add {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink);
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+}
+.products-item-dots {
+  position: absolute;
+  bottom: 22px;
+  right: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a,
+.dropdown-delete {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-edit:hover {
+  background-color: #ddd;
+}
+.dropdown-delete:hover {
+  background-color: #e90202;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-delete {
+  border: none;
+  width: 100%;
+  background-color: #fd0000;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-edit {
+  background-color: #f8f8f8;
+  color: #000;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <%- include('partials/head.ejs') %>
+  </head>
+  <body>
+    <%- include('partials/header.ejs') %>
+    <div class="navigation">
+      <div class="nav-inner container">
+        <p>Home > <%= navigationTitle%></p>
+      </div>
+    </div>
+
+    <div class="newProduct-form">
+      <div class="newProduct-from-inner container">
+        <div class="section-title">
+          <h2><%= sectionTitle %></h2>
+        </div>
+        <form class="form" action="/editProduct" method="POST">
+          <input type="hidden" value="<%= data._id %>" name="id" />
+          <input
+            type="text"
+            placeholder="Название продукта"
+            value="<%= data.title%>"
+            name="title"
+          />
+          <input
+            type="text"
+            placeholder="Цена"
+            value="<%=data.price%>"
+            name="price"
+          />
+          <input
+            type="text"
+            placeholder="Скидка"
+            value="<%=data.sale%>"
+            name="sale"
+          />
+          <input
+            type="text"
+            placeholder="URL картинки"
+            value="<%=data.imgUrl%>"
+            name="imgUrl"
+          />
+          <button type="submit"><%= btnName%></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

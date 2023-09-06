@@ -1,0 +1,18 @@
+.notFound-main {
+  text-align: center;
+  padding: 100px 0;
+}
+.notFound-main h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 87px;
+  color: var(--pink);
+  margin-bottom: 31px;
+}
+.notFound-main a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0b1cb6;
+}

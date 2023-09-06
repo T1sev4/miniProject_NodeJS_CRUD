@@ -1,0 +1,29 @@
+.product-profile {
+  display: flex;
+  position: relative;
+}
+.product-info {
+  margin-left: 62px;
+}
+.profile-add {
+  display: flex;
+  align-items: center;
+  background: var(--pink);
+  border-radius: 15px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+.profile-add img {
+  width: 20px;
+  height: 20px;
+}
+.profile-add p {
+  margin-left: 10px;
+}
+
+.profile-item-dots {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

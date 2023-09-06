@@ -1,0 +1,8 @@
+:root {
+  --grey: #f5f5f5;
+  --pink: #fe6769;
+  --darkGreen: #203530;
+}
+.container {
+  padding: 0 40px;
+}

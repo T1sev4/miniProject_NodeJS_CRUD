@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('partials/header.ejs') %>
+    <div class="navigation">
+      <div class="nav-inner container">
+        <p>Home > <%= navigationTitle%></p>
+      </div>
+    </div>
+
+    <div class="newProduct-form">
+      <div class="newProduct-from-inner container">
+        <div class="section-title">
+          <h2><%= sectionTitle %></h2>
+        </div>
+        <form class="form" action="/newProduct" method="POST">
+          <input type="text" placeholder="Название продукта" name="title" />
+          <input type="text" placeholder="Цена" name="price" />
+          <input type="text" placeholder="Скидка" name="sale" />
+          <input type="text" placeholder="URL картинки" name="imgUrl" />
+          <button type="submit"><%= btnName%></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
